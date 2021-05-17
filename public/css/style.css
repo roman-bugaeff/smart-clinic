@@ -1,0 +1,264 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Belotta", sans-serif;
+}
+
+.site-header {
+  background: url("../images/bamboo.jpg") no-repeat center top / cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul {
+  color: #5c9809;
+}
+
+.main-nav .nav > li > a {
+  padding: 15px 20px;
+}
+
+.main-logo {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  align-items: center;
+}
+
+.main-logo img {
+  height: 200px;
+  margin: 20 20 20 20;
+}
+
+.main-logo h1 {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-items: center;
+  align-self: center;
+  font-size: 50px;
+  font-family: "Dancing Script", serif;
+  padding-left: 30px;
+}
+
+/*===================navigation=============================*/
+
+.main-nav .nav {
+  text-decoration: none;
+  color: #748d37;
+}
+
+nav li:hover {
+  text-decoration: none;
+}
+
+/*================================================*/
+
+.block-main,
+.block-about {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  padding: 50px 0;
+  margin: 40px 0;
+}
+
+.block-main {
+  /* background-image: url('../images/irochka.jpeg'); */
+}
+
+.img-main {
+  text-align: center;
+}
+
+.img-main img {
+  max-width: 300px;
+  margin: 20px 0 0 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.block-main h2 {
+  margin-bottom: 30px;
+}
+
+.block-main ul {
+  margin: 50px 0 0 25px;
+}
+
+.block-main ul li {
+  margin: 2% 0;
+  font-size: 20px;
+}
+
+/*==================block-about==================*/
+.block-about,
+.block-massage,
+.block-naturopatia {
+  font-size: 18px;
+}
+.block-about img {
+  margin: 20px 0 20px 20px;
+  max-width: 300px;
+}
+.about-img,
+.massage-img,
+.naturopatia-img {
+  text-align: center;
+}
+
+/*===============block-massage=======================*/
+
+.block-massage img,
+.about-img img,
+.massage-img img,
+.naturopatia-img img {
+  margin: 20px 0 20px 20px;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*==================footer=============================*/
+
+.footer {
+  min-height: 200px;
+  margin-top: -200px;
+  background: url("../images/bamboo.jpg") no-repeat center top / cover;
+  margin-top: auto;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icons p {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  color: #0394DC;
+}
+
+.footer-list li {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+}
+
+.footer-list img {
+  -moz-transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.footer-list img:hover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/*======================slider=========================*/
+
+.slider {
+  min-width: 0;
+  position: relative;
+  padding: 20px 0 20px 0px;
+}
+.slider__item {
+  text-align: center;
+  min-width: 0;
+}
+.slider__item .slick-center {
+  opacity: 1;
+}
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.slider .slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+
+.slick-arrow::before {
+  border: none;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../images/slider/back.svg") 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url("../images/slider/next.svg") 0 0 / 100% no-repeat;
+}
+
+.slider__item img {
+  /* max-width: 300px; */
+  max-height: 450px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0px 10px;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #90ac4c;
+  border: none;
+  border-radius: 50%;
+}
